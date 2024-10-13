@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CotizadorFragment">
+
+    <!-- Campo de texto para el costo del servicio -->
+    <EditText
+        android:id="@+id/etCosto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Costo por servicio"
+        android:inputType="numberDecimal" />
+
+    <!-- Campo de texto para la cantidad -->
+    <EditText
+        android:id="@+id/etCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        android:inputType="number" />
+
+    <!-- Botón para calcular el costo total -->
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_gravity="center" />
+
+    <!-- TextView para mostrar el resultado -->
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: $0.00"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:paddingTop="16dp" />
+
+</LinearLayout>
